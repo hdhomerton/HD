@@ -1,0 +1,34 @@
+create table  Adm(ADMID varchar(1000),PATIENTID varchar(1000),ADM_DATE INTEGER, ADM_TIME varchar(1000), AGE_GRP_AT_ADM varchar(1000),DIS_DATE INTEGER, DIS_TIME varchar(1000), AGE_GRP_AT_DIS varchar(1000),DISCH_DEST varchar(1000),TFC_CODE varchar(1000),TFC_DESC varchar(1000),ADM_SOURCE varchar(1000),NAT_ADM_METH varchar(1000));
+
+create table  Algy(ADMID varchar(1000),PATIENTID varchar(1000),ALGY_DATE INTEGER, AGE_GRP_AT_ALGY varchar(1000),ALLERGEN_TYPE varchar(1000),ALLERGEN varchar(1000),REACTION varchar(1000));
+ALTER TABLE Algy  MODIFY COLUMN ALGY_DATE Int NULL;
+
+create table  Cancer(PATIENTID varchar(1000),CANCER varchar(1000));
+
+create table  Demog(PATIENTID varchar(1000),GENDER varchar(1000),PCODE_AREA varchar(1000),ETHNICITY varchar(1000),DOD varchar(1000),AGE_GRP_AT_DEATH varchar(1000));
+
+create table  Fluid(ADMID varchar(1000),PATIENTID varchar(1000),FLUID_DATE INTEGER, AGE_GRP_AT_FLUID_DATE varchar(1000),TOT_INPUT varchar(1000),TOT_OUTPUT varchar(1000));
+
+create table  Implant(ADMID varchar(1000),PATIENTID varchar(1000),IMP_TYPE varchar(1000),IMP_NAME varchar(1000),IMPLANT_DATE INTEGER, AGE_GRP_AT_IMPLANT varchar(1000),EXPLANT_DATE INTEGER, AGE_GRP_AT_EXPLANT varchar(1000));
+
+create table  ITU(ADMID varchar(1000),PATIENTID varchar(1000),START_DATE INTEGER, START_TIME varchar(1000), AGE_GRP_AT_START varchar(1000),END_DATE INTEGER, END_TIME varchar(1000), AGE_GRP_AT_END varchar(1000));
+
+create table  Labs(ADMID varchar(1000),PATIENTID varchar(1000),RES_DATE INTEGER, RES_TIME varchar(1000), AGE_GRP_AT_RES varchar(1000),TEST varchar(1000),ORD_VALUE varchar(1000),REFERENCE_UNIT varchar(1000));
+
+create table  MedHX(ADMID varchar(1000),PATIENTID varchar(1000),HX_DATE INTEGER, AGE_GRP_AT_HX_DATE varchar(1000), PROBLEM varchar(1000),MED_HX_NAME varchar(1000));
+
+create table  Meds(ADMID varchar(1000),PATIENTID varchar(1000),MEDICATION varchar(1000),MED_ROUTE varchar(1000),SCHED_START_DATE INTEGER, SCHED_START_TIME varchar(1000), AGE_GRP_AT_SCHED_START varchar(1000),SCHED_END_DATE INTEGER, SCHED_END_TIME varchar(1000), AGE_GRP_AT_SCHED_END varchar(1000),DISCON_DATE INTEGER, DISCON_TIME varchar(1000), AGE_GRP_AT_DISCONTINUE varchar(1000),FREQUENCY varchar(1000),DOSE varchar(1000),DOSE_UNIT varchar(1000));
+
+create table  Obs(ADMID varchar(1000),PATIENTID varchar(1000),REC_DATE INTEGER, REC_TIME varchar(1000), AGE_GRP_AT_REC varchar(1000),OBS_TYPE varchar(1000),REC varchar(1000));
+
+create table  OPs(ADMID varchar(1000),PATIENTID varchar(1000),OPCS_CODE varchar(1000),OPCS_DESC varchar(1000),OP_DATE INTEGER, OP_TIME varchar(1000), AGE_GRP_AT_OP varchar(1000));
+
+create table  Probs(ADMID varchar(1000),PATIENTID varchar(1000),NOTED_DATE INTEGER, AGE_GRP_AT_NOTED_DATE varchar(1000), RESOLVED_DATE INTEGER, AGE_GRP_AT_RESOLVED_DATE varchar(1000), PROBLEM varchar(1000),PROB_NAME varchar(1000));
+
+create table  Rad(ADMID varchar(1000),PATIENTID varchar(1000),EXAM_DATE INTEGER, EXAM_TIME varchar(1000), AGE_GRP_AT_EXAM varchar(1000),NICIP_CODE varchar(1000),EXAM_NAME varchar(1000));
+
+create table  SurgHX(ADMID varchar(1000),PATIENTID varchar(1000),HX_DATE INTEGER, AGE_GRP_AT_HX_DATE varchar(1000), PROC_CODE varchar(1000),SURG_HX_NAME varchar(1000));
+
+create table  Thtr(ADMID varchar(1000),PATIENTID varchar(1000),OPCS_CODE varchar(1000),OPCS_DESC varchar(1000),OP_STRT_DATE INTEGER, OP_STRT_TIME varchar(1000), AGE_GRP_AT_OP_STRT varchar(1000),OP_END_DATE INTEGER, OP_END_TIME varchar(1000), AGE_GRP_AT_OP_END varchar(1000));  
+
+create table  Resp(RESPID varchar(1000),PROBLEM varchar(1000),PROB_NAME varchar(1000));

@@ -1,0 +1,216 @@
+---  
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r libraries, echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(codingMatrices)
+```
+
+```{r}
+cuhdata_dir = 'C:\\Users\\AdedayoAdeyomoye\\Documents\\School\\CAM\\MSt\\Dissertation\\References\\Data\\Analysis\\R'
+
+```
+
+
+
+#Full Data
+
+```{r}
+comorb_eth_los_file = paste0(cuhdata_dir, '\\', 'ITUCOMOREthXLos.csv') 
+comorb_eth_los_dat_full = read.table(comorb_eth_los_file, sep=',', header = TRUE)
+comorb_eth_los_dat_full_grp = comorb_eth_los_dat_full
+comorb_eth_los_dat_full$Ethnicity = as.factor(comorb_eth_los_dat_full$Ethnicity)
+head(comorb_eth_los_dat_full)
+summary(comorb_eth_los_dat_full$Ethnicity)
+```
+
+
+#Relevant Data
+
+```{r}
+comorb_eth_los_dat = comorb_eth_los_dat_full[,c(2,3,4)]
+head(comorb_eth_los_dat)
+
+
+```
+
+#Relevant Data
+
+```{r}
+comorb_eth_los_dat_grp = comorb_eth_los_dat_full_grp[,c(2,3,4)]
+#comorb_eth_los_dat_grp$Ethnicity[(comorb_eth_los_dat$Ethnicity != 'A'), ]
+#head(comorb_eth_los_dat_grp)
+comorb_eth_los_dat_grp = comorb_eth_los_dat_grp[which(comorb_eth_los_dat_grp$Ethnicity != 'Z'), ]
+comorb_eth_los_dat_grp$Ethnicity[which(comorb_eth_los_dat_grp$Ethnicity != 'A')] = 'X'
+comorb_eth_los_dat_grp$Ethnicity=as.factor(comorb_eth_los_dat_grp$Ethnicity)
+summary(comorb_eth_los_dat_grp$Ethnicity)
+```
+#Ethnicity GRP Vs LOS
+```{r}
+
+comorb_eth_los_dat_grp %>% ggplot(aes( x=Ethnicity, y=LOS, fill=Ethnicity )) + geom_boxplot() +labs(title = "Effect of Grouped Ethnicity on LOS") + theme(plot.title = element_text(hjust = 0.5, )) + theme(text=element_text(family="Calibri", face="bold", size=12))
+
+```
+
+#Average and IQR LOS per Ethnicity GRP
+```{r} 
+summary(comorb_eth_los_dat_grp[which(comorb_eth_los_dat_grp$Ethnicity == 'A'),2:3])
+
+summary(comorb_eth_los_dat_grp[which(comorb_eth_los_dat_grp$Ethnicity == 'X'),2:3])
+```
+
+#Linear Model on Ethnicity GRP vs LOS
+```{r}
+com_fit = lm(LOS ~ Ethnicity, data=comorb_eth_los_dat_grp)
+summary(com_fit)
+
+```
+
+#Average LOS by Comorbidities
+```{r} 
+summary(comorb_eth_los_dat[,2:3])
+```
+
+#Ethnicity vs LOS Data
+```{r} 
+eth_los_dat = comorb_eth_los_dat_full[,c(2,4)]
+head(eth_los_dat)
+```
+
+
+#Average and IQR LOS for All Ethnicity
+```{r}
+summary(eth_los_dat[,1:2])
+
+```
+
+#Ethnicity Vs LOS
+```{r}
+
+comorb_eth_los_dat %>% ggplot(aes( x=Ethnicity, y=LOS, fill=Ethnicity )) + geom_boxplot() +labs(title = "Effect of Ethnicity on LOS") + theme(plot.title = element_text(hjust = 0.5, )) + theme(text=element_text(family="Calibri", face="bold", size=12))
+
+```
+
+#Average and IQR LOS per Ethnicity
+```{r}
+eths = c('A','B','C', 'F', 'G','K','L','M','N','R','S','Z')
+
+print(eths[1])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[1]),2:3])
+
+print(eths[2])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[2]),2:3])
+
+print(eths[3])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[3]),2:3])
+
+print(eths[4])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[4]),2:3])
+
+print(eths[5])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[5]),2:3])
+
+print(eths[6])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[6]),2:3])
+
+print(eths[7])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[7]),2:3])
+
+print(eths[8])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[8]),2:3])
+
+print(eths[9])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[9]),2:3])
+
+print(eths[10])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[10]),2:3])
+
+print(eths[11])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[11]),2:3])
+
+print(eths[12])
+summary(comorb_eth_los_dat[which(comorb_eth_los_dat$Ethnicity == eths[12]),2:3])
+
+```
+
+#Number of Co-morbidities vs LOS BoxPlot
+```{r}
+comorb_eth_los_dat$Comorbiditiesf = as.factor(comorb_eth_los_dat$Comorbidities)
+
+comorb_eth_los_dat %>% ggplot(aes( x=Comorbiditiesf, y=LOS, fill=Comorbiditiesf )) + geom_boxplot() +labs(title = "Co-morbidities vs LOS", x ="Co-morbidities",fill="Co-morbidities") + theme(plot.title = element_text(hjust = 0.5, )) + theme(text=element_text(family="Calibri", face="bold", size=12))
+
+```
+
+#Linear Model on Number of Co-morbidities vs LOS
+```{r}
+com_fit = lm(LOS ~ Comorbiditiesf, data=comorb_eth_los_dat)
+summary(com_fit)
+
+```
+
+#Comorbidities vs LOS Diagnostics Plot     
+```{r}
+
+com_fit = lm(LOS ~ Comorbidities, data=comorb_eth_los_dat)
+plot(com_fit)
+head(comorb_eth_los_dat)
+
+```
+
+
+#Comorbidities vs LOS Regression Plot
+```{r}
+#plot(LOS ~ Comorbidities, data=comorb_eth_los_dat)
+#abline(fit)
+
+comorb_eth_los_dat %>% ggplot(aes(x=Comorbidities, y=LOS))+
+  geom_point() +
+  geom_smooth(method='lm', se = FALSE) +labs(title = "Effect of Co-morbidities on LOS Regression Plot", x="Co-morbidities") + theme(plot.title = element_text(hjust = 0.5))+ theme(text=element_text(family="Calibri", face="bold", size=12))
+```
+
+
+#Extracting Slope, and Importance of Intercept for Co-morbidities vs LOS
+```{r}
+summary(com_fit)
+```
+
+#Linear Model for Ethnicity vs LOS 
+```{r}
+
+eth_com_fit = lm(LOS ~ Ethnicity, data=comorb_eth_los_dat)
+summary(eth_com_fit)
+
+```
+#Linear Model for Co-morbidities and Ethnicity Interaction vs LOS
+```{r}
+
+eth_com_fit = lm(LOS ~ Comorbidities + Ethnicity +  Comorbidities * Ethnicity, data=comorb_eth_los_dat)
+summary(eth_com_fit)
+
+```
+
+
+
+#Comorbidities that significantly affect LOS Data
+```{r}
+prev_comorb_los_file = paste0(cuhdata_dir, '\\', 'PrevelentComobsLOS.csv') 
+prev_comorb_los_dat_full = read.table(prev_comorb_los_file, sep=',', header = TRUE)
+prev_comorb_los_dat_full$Comorbidities = as.factor(prev_comorb_los_dat_full$Comorbidities)
+head(prev_comorb_los_dat_full)
+#summary(prev_comorb_los_dat_full[which(prev_comorb_los_dat_full$merged_comorb_name == 'Anaemia'),])
+summary(prev_comorb_los_dat_full)
+```
+
+#Common Prevalent Co-morbidities Box Plot
+```{r} 
+prev_comorb_los_dat_full %>% ggplot(aes(x=Comorbidities, y=LOS, fill=Comorbidities)) + geom_boxplot()+labs(title = "Common Prevalent Co-morbidities BoxPlot", x="Co-morbidities") + theme(plot.title = element_text(hjust = 0.5))+ theme(text=element_text(family="Calibri", face="bold", size=12)) + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+#Common Prevalent Co-morbidities Linear Model
+```{r}  
+prev_comorb_los_dat_full$Comorbidities = relevel(prev_comorb_los_dat_full$Comorbidities, ref = "COPD")
+p_com_fit = lm(LOS ~ Comorbidities, data=prev_comorb_los_dat_full)
+summary(p_com_fit)
+```

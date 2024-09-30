@@ -1,0 +1,660 @@
+merged_comorb_name,l_readmission
+"Pulmonary embolism",1
+"Pulmonary embolism",0
+"Respiratory failure",1
+"Respiratory failure",0
+COVID,1
+Sepsis,1
+"Respiratory failure",1
+"Pulmonary embolism",1
+Sepsis,1
+COVID,1
+"Respiratory failure",1
+"Pulmonary embolism",1
+Sepsis,0
+COVID,0
+"Pulmonary embolism",0
+"Respiratory failure",0
+"Pulmonary embolism",1
+Sepsis,0
+COVID,1
+"Pulmonary embolism",1
+COVID,1
+"Atrial fibrillation",1
+"Pulmonary embolism",1
+"Atrial fibrillation",1
+"Respiratory failure",1
+"Respiratory failure",1
+COPD,0
+Obesity,0
+Sepsis,0
+Diabetes,0
+Anaemia,1
+Anaemia,1
+Anaemia,1
+Anaemia,1
+Diabetes,1
+Asthma,1
+Delirium,1
+Delirium,1
+Asthma,1
+COVID,1
+COVID,1
+Delirium,1
+COVID,1
+Diabetes,1
+Diabetes,1
+Asthma,1
+Diabetes,0
+Asthma,0
+COVID,0
+Delirium,0
+Hypertension,0
+Asthma,0
+"Respiratory failure",0
+Pneumonia,0
+COVID,0
+COPD,0
+"Respiratory failure",0
+Pneumonia,1
+Sepsis,1
+Anaemia,0
+Hyponatraemia,0
+"Respiratory failure",1
+"Respiratory failure",1
+Pneumonia,1
+Pneumonia,1
+Pneumonia,1
+"Respiratory failure",1
+"Respiratory failure",1
+Pneumonia,1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+"Atrial fibrillation",0
+Hypertension,0
+Asthma,0
+Pneumonia,0
+Sepsis,1
+Sepsis,0
+Asthma,0
+Anaemia,1
+Anaemia,0
+"Respiratory failure",0
+Asthma,0
+Sepsis,0
+Anaemia,1
+Hypertension,1
+Anaemia,1
+Hypertension,1
+Hypertension,0
+Anaemia,0
+"Atrial fibrillation",0
+COPD,0
+Hypertension,0
+Pneumonia,0
+COPD,0
+"Respiratory failure",0
+COVID,1
+"Atrial fibrillation",1
+Pneumonia,1
+Anaemia,1
+"Atrial fibrillation",0
+Sepsis,0
+"Atrial fibrillation",1
+Obesity,1
+Obesity,1
+"Atrial fibrillation",1
+"Respiratory failure",1
+Pneumonia,1
+Hypertension,1
+Pneumonia,1
+Hypertension,1
+"Respiratory failure",1
+"Respiratory failure",0
+"Atrial fibrillation",0
+Pneumonia,0
+Obesity,0
+Hypertension,0
+Sepsis,1
+Sepsis,0
+Hyponatraemia,0
+"Pulmonary embolism",0
+COVID,0
+Asthma,1
+COPD,1
+COVID,0
+Sepsis,0
+"Respiratory failure",0
+COPD,0
+"Atrial fibrillation",0
+Pneumonia,0
+Sepsis,0
+Delirium,0
+"Atrial fibrillation",0
+Delirium,0
+Asthma,0
+"Pulmonary embolism",0
+COPD,0
+"Respiratory failure",0
+Hypertension,0
+Anaemia,0
+"Atrial fibrillation",0
+Sepsis,0
+Pneumonia,0
+"Respiratory failure",0
+Sepsis,0
+Obesity,0
+Sepsis,0
+Obesity,0
+"Respiratory failure",0
+Pneumonia,0
+Anaemia,1
+"Atrial fibrillation",1
+COVID,1
+Sepsis,1
+Hyponatraemia,1
+Pneumonia,1
+Delirium,1
+"Respiratory failure",1
+Pneumonia,0
+COVID,0
+Pneumonia,0
+"Respiratory failure",0
+Sepsis,0
+Sepsis,1
+Sepsis,0
+Asthma,0
+Hypertension,0
+"Atrial fibrillation",1
+Hypertension,1
+Pneumonia,1
+Asthma,1
+Asthma,0
+Pneumonia,0
+Anaemia,0
+Obesity,0
+COPD,1
+Sepsis,1
+COPD,1
+Sepsis,1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+Pneumonia,0
+Obesity,0
+Sepsis,1
+Sepsis,1
+Diabetes,0
+"Pulmonary embolism",0
+Sepsis,1
+Sepsis,0
+Sepsis,1
+Hyponatraemia,1
+Hypertension,1
+Pneumonia,1
+Hyponatraemia,0
+Hypertension,0
+Sepsis,0
+Pneumonia,0
+Delirium,0
+Anaemia,0
+Anaemia,1
+"Respiratory failure",1
+Obesity,0
+Pneumonia,0
+"Respiratory failure",0
+Diabetes,1
+Anaemia,1
+Anaemia,0
+Diabetes,0
+Obesity,0
+"Respiratory failure",0
+Hypertension,0
+COVID,0
+Delirium,1
+Delirium,1
+Delirium,1
+Delirium,0
+"Respiratory failure",0
+Pneumonia,0
+COPD,0
+Asthma,0
+Pneumonia,0
+Anaemia,1
+Anaemia,0
+"Atrial fibrillation",1
+Delirium,1
+"Atrial fibrillation",1
+Delirium,1
+Delirium,1
+"Atrial fibrillation",1
+Obesity,1
+"Respiratory failure",1
+Delirium,1
+"Pulmonary embolism",1
+Pneumonia,1
+Delirium,0
+"Respiratory failure",0
+"Pulmonary embolism",0
+Pneumonia,0
+Delirium,0
+Anaemia,0
+"Atrial fibrillation",0
+Hyponatraemia,0
+Sepsis,0
+Hypertension,0
+"Respiratory failure",0
+Delirium,0
+COVID,0
+Sepsis,1
+Sepsis,0
+"Atrial fibrillation",0
+Sepsis,0
+"Respiratory failure",1
+Pneumonia,1
+Pneumonia,1
+Pneumonia,0
+Hypertension,0
+Pneumonia,0
+Asthma,1
+Pneumonia,1
+"Atrial fibrillation",1
+COVID,1
+"Respiratory failure",1
+"Atrial fibrillation",0
+COVID,0
+"Respiratory failure",0
+Asthma,0
+Pneumonia,0
+Hypertension,0
+Sepsis,0
+"Pulmonary embolism",0
+Pneumonia,0
+"Respiratory failure",1
+Anaemia,1
+"Atrial fibrillation",1
+"Respiratory failure",0
+Anaemia,0
+"Atrial fibrillation",0
+Diabetes,1
+Pneumonia,0
+Hypertension,0
+Anaemia,0
+Sepsis,1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+Hypertension,1
+Hypertension,1
+"Atrial fibrillation",0
+Hypertension,0
+Hypertension,0
+COPD,0
+Pneumonia,1
+Hypertension,1
+"Respiratory failure",1
+COPD,1
+Asthma,1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+"Atrial fibrillation",0
+COVID,1
+"Pulmonary embolism",1
+"Respiratory failure",1
+Delirium,1
+"Respiratory failure",1
+Pneumonia,1
+Sepsis,1
+Pneumonia,1
+COVID,1
+Delirium,1
+"Pulmonary embolism",1
+Sepsis,1
+Pneumonia,0
+Sepsis,0
+"Pulmonary embolism",0
+"Respiratory failure",0
+Delirium,0
+COVID,0
+Sepsis,0
+"Atrial fibrillation",1
+Hypertension,1
+Delirium,1
+Sepsis,1
+Hypertension,0
+Delirium,0
+Sepsis,0
+"Atrial fibrillation",0
+Sepsis,0
+Pneumonia,0
+Anaemia,0
+"Atrial fibrillation",0
+Diabetes,0
+COVID,0
+Anaemia,0
+Hyponatraemia,0
+Obesity,0
+Hypertension,0
+Obesity,1
+Obesity,0
+Diabetes,0
+Delirium,1
+"Respiratory failure",1
+COPD,1
+Sepsis,1
+Diabetes,1
+Obesity,1
+Pneumonia,1
+Diabetes,1
+Hypertension,1
+Sepsis,1
+Hypertension,0
+Obesity,0
+Pneumonia,0
+Sepsis,0
+Diabetes,0
+Sepsis,0
+Obesity,0
+Delirium,0
+Diabetes,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,1
+Sepsis,0
+Asthma,0
+Sepsis,1
+"Respiratory failure",1
+"Respiratory failure",0
+Sepsis,0
+Pneumonia,0
+"Respiratory failure",0
+Obesity,0
+Hypertension,1
+Anaemia,1
+"Atrial fibrillation",1
+Hypertension,1
+Diabetes,1
+"Atrial fibrillation",1
+Anaemia,1
+Anaemia,1
+Diabetes,1
+Diabetes,1
+Hypertension,1
+"Atrial fibrillation",1
+Diabetes,0
+Hypertension,0
+Anaemia,0
+"Atrial fibrillation",0
+Pneumonia,0
+Sepsis,0
+Obesity,0
+Hypertension,0
+Diabetes,0
+"Atrial fibrillation",1
+"Atrial fibrillation",0
+Sepsis,0
+Pneumonia,0
+Hypertension,1
+COVID,1
+"Respiratory failure",1
+Sepsis,1
+"Respiratory failure",1
+Sepsis,1
+COVID,1
+Hypertension,1
+"Respiratory failure",0
+Hypertension,0
+Sepsis,0
+COVID,0
+Hypertension,0
+Diabetes,0
+Pneumonia,0
+Sepsis,0
+"Pulmonary embolism",0
+Hypertension,1
+Hypertension,1
+Hypertension,1
+Hypertension,1
+Hypertension,0
+Pneumonia,0
+Sepsis,0
+Sepsis,0
+Hyponatraemia,1
+Hyponatraemia,1
+Hyponatraemia,1
+Hyponatraemia,0
+Diabetes,0
+"Respiratory failure",0
+Delirium,0
+Hypertension,0
+"Pulmonary embolism",0
+"Atrial fibrillation",1
+Hyponatraemia,1
+"Atrial fibrillation",1
+Hyponatraemia,1
+Anaemia,1
+Anaemia,0
+Sepsis,0
+"Atrial fibrillation",0
+Diabetes,0
+"Atrial fibrillation",1
+Hypertension,1
+"Respiratory failure",1
+Hypertension,0
+"Atrial fibrillation",0
+"Respiratory failure",0
+"Respiratory failure",1
+Pneumonia,1
+Sepsis,1
+Obesity,1
+"Atrial fibrillation",1
+"Respiratory failure",1
+Pneumonia,1
+"Atrial fibrillation",1
+Sepsis,1
+Obesity,1
+"Respiratory failure",0
+Obesity,0
+Pneumonia,0
+"Atrial fibrillation",0
+Sepsis,0
+Hypertension,1
+Sepsis,1
+Obesity,1
+Sepsis,0
+Obesity,0
+Hypertension,0
+Sepsis,1
+Hyponatraemia,1
+Sepsis,1
+"Respiratory failure",1
+Hyponatraemia,1
+Sepsis,1
+Sepsis,1
+"Respiratory failure",1
+"Respiratory failure",1
+Sepsis,1
+Sepsis,1
+"Respiratory failure",1
+"Respiratory failure",1
+Hyponatraemia,1
+Sepsis,1
+"Respiratory failure",1
+Hyponatraemia,1
+Hyponatraemia,1
+"Respiratory failure",1
+Hyponatraemia,1
+Hyponatraemia,1
+"Respiratory failure",0
+Hyponatraemia,0
+Sepsis,0
+"Pulmonary embolism",1
+"Pulmonary embolism",0
+"Respiratory failure",1
+Pneumonia,1
+Pneumonia,0
+Diabetes,0
+"Pulmonary embolism",0
+Delirium,0
+COPD,1
+Hyponatraemia,1
+COPD,0
+Hyponatraemia,0
+Anaemia,1
+Hypertension,0
+COVID,0
+"Respiratory failure",0
+Hypertension,0
+Hypertension,0
+"Respiratory failure",0
+Pneumonia,0
+Hypertension,1
+Sepsis,1
+Hypertension,1
+Sepsis,1
+Hypertension,0
+Sepsis,0
+"Atrial fibrillation",0
+Hypertension,0
+Diabetes,0
+Anaemia,1
+Anaemia,1
+Anaemia,0
+"Atrial fibrillation",0
+Pneumonia,0
+Obesity,0
+Hypertension,0
+"Atrial fibrillation",1
+Hyponatraemia,1
+Sepsis,1
+Pneumonia,1
+COVID,0
+Obesity,0
+"Respiratory failure",0
+"Atrial fibrillation",1
+COVID,0
+"Atrial fibrillation",0
+Pneumonia,0
+Obesity,1
+Delirium,1
+"Atrial fibrillation",1
+Obesity,1
+Delirium,1
+Delirium,1
+Obesity,1
+"Atrial fibrillation",1
+"Atrial fibrillation",1
+Delirium,0
+"Atrial fibrillation",0
+Obesity,0
+Hypertension,0
+Obesity,0
+COVID,1
+Diabetes,1
+"Respiratory failure",1
+COVID,1
+Diabetes,1
+"Respiratory failure",1
+COVID,1
+Diabetes,1
+"Respiratory failure",1
+"Respiratory failure",1
+Sepsis,1
+"Respiratory failure",0
+Sepsis,0
+"Pulmonary embolism",0
+Pneumonia,0
+Delirium,1
+Delirium,1
+Delirium,0
+Obesity,1
+Obesity,1
+Obesity,1
+Obesity,1
+Obesity,0
+"Pulmonary embolism",1
+"Atrial fibrillation",1
+Pneumonia,1
+Diabetes,1
+COVID,1
+COVID,1
+Diabetes,1
+Pneumonia,1
+"Atrial fibrillation",1
+"Pulmonary embolism",1
+"Atrial fibrillation",0
+Diabetes,0
+Pneumonia,0
+COVID,0
+"Pulmonary embolism",0
+Sepsis,0
+Delirium,0
+COVID,0
+Hypertension,0
+Diabetes,0
+Hypertension,0
+Delirium,0
+Hypertension,0
+Diabetes,0
+"Atrial fibrillation",0
+"Respiratory failure",0
+Obesity,0
+Obesity,0
+"Pulmonary embolism",1
+"Respiratory failure",1
+Delirium,1
+COVID,1
+"Pulmonary embolism",0
+COVID,0
+Delirium,0
+"Respiratory failure",0
+Pneumonia,0
+Sepsis,0
+Sepsis,1
+Anaemia,1
+Pneumonia,1
+Delirium,1
+Sepsis,1
+Pneumonia,1
+"Respiratory failure",1
+"Atrial fibrillation",1
+Pneumonia,0
+"Atrial fibrillation",0
+Sepsis,0
+"Respiratory failure",0
+Delirium,0
+Sepsis,1
+Sepsis,1
+Sepsis,0
+Sepsis,0
+"Respiratory failure",0
+Pneumonia,0
+Delirium,0
+Delirium,0
+Pneumonia,0
+COPD,0
+Anaemia,1
+Sepsis,1
+Hyponatraemia,1
+Delirium,1
+Hyponatraemia,1
+Sepsis,1
+Anaemia,1
+Delirium,1
+Delirium,0
+Sepsis,0
+Anaemia,0
+Hyponatraemia,0
+Obesity,1
+Pneumonia,1
+"Respiratory failure",1
+Sepsis,1
+Obesity,1
+Sepsis,1
+"Respiratory failure",1
+Pneumonia,1

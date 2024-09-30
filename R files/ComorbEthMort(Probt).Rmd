@@ -1,0 +1,147 @@
+---  
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r libraries, echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r}
+cuhdata_dir = 'C:\\Users\\AdedayoAdeyomoye\\Documents\\School\\CAM\\MSt\\Dissertation\\References\\Data\\Analysis\\R'
+
+```
+
+
+
+
+#Full Data
+
+```{r}
+comorb_eth_mort_file = paste0(cuhdata_dir, '\\', 'ITUCOMOREthXMort.csv') 
+comorb_eth_mort_dat_full = read.table(comorb_eth_mort_file, sep=',', header = TRUE)
+comorb_eth_mort_dat_full$Ethnicity = as.factor(comorb_eth_mort_dat_full$Ethnicity)
+comorb_eth_mort_dat_full$Mortality = as.factor(comorb_eth_mort_dat_full$Mortality)
+
+
+head(comorb_eth_mort_dat_full)
+```
+
+
+
+#Relevant Data
+
+```{r}
+comorb_eth_mort_dat = comorb_eth_mort_dat_full[,c(2,3,4)]
+head(comorb_eth_mort_dat)
+
+```
+
+#IQR of Readmission by Comorbidities
+```{r} 
+summary(comorb_eth_mort_dat[,2:3]) # This is to know the number of readmissions and non-readmissions
+#loadfonts(device = "win")
+
+```
+
+
+
+#Mortility vs Comorbidities BoxPlot
+```{r}
+comorb_eth_mort_dat %>% ggplot(aes(x=Mortality, y=Comorbidities, fill=Mortality)) + geom_boxplot()+labs(title = "Mortility vs Co-morbidities BoxPlot", y="Co-morbidities") + theme(plot.title = element_text(hjust = 0.5))+ theme(text=element_text(family="Calibri", face="bold", size=12))
+head(comorb_eth_mort_dat)
+```
+``
+#Appendix 17
+
+```{r}
+
+summary(comorb_eth_mort_dat$Comorbidities[comorb_eth_mort_dat$X_Mortality == 0])
+
+summary(comorb_eth_mort_dat$Comorbidities[comorb_eth_mort_dat$X_Mortality == 1])
+view(comorb_eth_mort_dat)
+```
+
+#Comorbidities vs Mortality Logistic Regression Model
+```{r}
+
+comorb_eth_mort_fit = glm(Mortality ~ Comorbidities, family="binomial", data=comorb_eth_mort_dat)
+summary(comorb_eth_mort_fit) 
+
+```
+
+#Co-morbidities vs Probability of Mortality Logistic Regression Plot
+```{r}
+ 
+
+model <- glm(Mortality ~ Comorbidities, data=comorb_eth_mort_dat, family=binomial)
+
+#define new data frame that contains predictor variable
+newdata <- data.frame(Comorbidities=seq(0, 40,len=500))
+
+#use fitted model to predict values of vs
+newdata$Mortality = predict(model, newdata, type="response")
+
+#plot logistic regression curve
+comorb_eth_mort_dat$X_Mortality[comorb_eth_mort_dat$Mortality == 1] = 1
+comorb_eth_mort_dat$X_Mortality[comorb_eth_mort_dat$Mortality== 0] = 0
+
+#view(comorb_eth_readmit_dat$X_Mortality )
+plot(y=comorb_eth_mort_dat$X_Mortality , x=comorb_eth_mort_dat$Comorbidities, xlab = "Number of Co-morbidities", ylab = "Probability of Mortalityn", main = "Co-morbidities vs Probability of Mortality")
+lines(y=newdata$Mortality , x=newdata$Comorbidities, lwd=2)
+ 
+ 
+```
+#Ethnicity vs Mortality Logistic Regression Model
+
+```{r}
+comorb_eth_mort_fit = glm(Mortality ~ Ethnicity, family='binomial',data=comorb_eth_mort_dat_full)
+summary(comorb_eth_mort_fit)
+
+```
+
+
+#Comorbidities and Ethnicity vs Mortality Logistic Regression Model
+
+```{r}
+comorb_eth_mort_fit = glm(Mortality ~ Comorbidities + Ethnicity, family='binomial',data=comorb_eth_mort_dat_full)
+summary(comorb_eth_mort_fit)
+
+```
+
+#Data Significance of each Comorbidity on Mortality Data
+```{r}
+
+prev_comorb_mortality_file = paste0(cuhdata_dir, '\\', 'ITUSpecificCOMORXMortality.csv') 
+prev_comorb_mortality_dat_full = read.table(prev_comorb_mortality_file, sep=',', header = TRUE)
+prev_comorb_mortality_dat_full$merged_comorb_name = as.factor(prev_comorb_mortality_dat_full$merged_comorb_name)
+head(prev_comorb_mortality_dat_full)
+#summary(prev_comorb_readmit_dat_full[which(prev_comorb_readmit_dat_full$merged_comorb_name == 'Anaemia'),])
+summary(prev_comorb_mortality_dat_full)
+```
+
+
+#Significance of each Comorbidity on Mortality Regression Model
+```{r}
+prev_comorb_mortality_dat_full$merged_comorb_name = relevel(prev_comorb_mortality_dat_full$merged_comorb_name, ref = "COPD")
+prev_comorb_mortality_fit = glm(Mortality ~ merged_comorb_name, family='binomial',data=prev_comorb_mortality_dat_full)
+summary(prev_comorb_mortality_fit)
+```
+
+
+#Data for Co-morbidities vs Mortality Probability Geom-Bar
+```{r} 
+comorb_mort_probabhs_file = paste0(cuhdata_dir, '\\', 'ITUSpecificCOMORXMortalityProbability.csv') 
+comorb_mort_probabhs_dat_full = read.table(comorb_mort_probabhs_file, sep=',', header = TRUE)
+
+head(comorb_mort_probabhs_dat_full)
+```
+
+#Comorbidity on Mortality Probability Geom-Bar
+```{r} 
+comorb_mort_probabhs_dat_full %>% ggplot +geom_bar(aes(x= reorder(merged_comorb_name, Probability_Mortality), y=Probability_Mortality), fill = "purple",  stat="identity", position = "dodge")   + theme(plot.title = element_text(hjust = 0.5,))+ theme(text=element_text(family="Calibri", face="bold", size=12))+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + coord_flip() +
+  aes(y = after_stat(count)/sum(after_stat(count))) + 
+  scale_y_continuous(labels = scales::percent)+labs(title = "Percentage Probability of Mortality by Co-morbidity", x="Comorbidities", y="Probability of Mortality") 
+
+```

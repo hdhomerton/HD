@@ -1,0 +1,15 @@
+merged_comorb_name,Probability_Readmission
+COPD,0.375
+Asthma,0.3889
+Hypertension,0.4
+Pneumonia,0.4203
+Obesity,0.425
+Pulmonary embolism,0.4643
+Diabetes,0.4848
+Delirium,0.5217
+COVID,0.5263
+Sepsis,0.54
+Respiratory failure,0.5513
+Anaemia,0.575
+Atrial fibrillation,0.5909
+Hyponatraemia,0.6667

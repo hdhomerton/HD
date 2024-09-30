@@ -1,0 +1,152 @@
+---  
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r libraries, echo=FALSE}
+library(tidyverse)
+library(ggplot2)
+
+```
+
+```{r}
+cuhdata_dir = 'C:\\Users\\AdedayoAdeyomoye\\Documents\\School\\CAM\\MSt\\Dissertation\\References\\Data\\Analysis\\R'
+
+```
+
+
+
+#Full Data
+
+```{r}
+comorb_eth_readmit_file = paste0(cuhdata_dir, '\\', 'ITUCOMOREthXReAdmit.csv') 
+comorb_eth_readmit_dat_full = read.table(comorb_eth_readmit_file, sep=',', header = TRUE)
+comorb_eth_readmit_dat_full$Ethnicity = as.factor(comorb_eth_readmit_dat_full$Ethnicity)
+comorb_eth_readmit_dat_full$L_Readmission = as.factor(comorb_eth_readmit_dat_full$L_Readmission)
+head(comorb_eth_readmit_dat_full)
+
+```
+
+
+#Relevant Data
+
+```{r}
+comorb_eth_readmit_dat = comorb_eth_readmit_dat_full[,c(2,3,4)]
+head(comorb_eth_readmit_dat)
+
+
+```
+
+#Average Readmission by Comorbidities
+```{r} 
+summary(comorb_eth_readmit_dat[,2:3]) # This is to know the number of readmissions and non-readmissions
+#loadfonts(device = "win")
+
+```
+
+
+#Readmission vs Comorbidities BoxPlot
+```{r}
+comorb_eth_readmit_dat %>% ggplot(aes(x=L_Readmission, y=Comorbidities, fill=L_Readmission)) + geom_boxplot() +labs(title = "Readmission vs Co-morbidities", x="Readmission", y="Co-morbidities ", fill="Readmission") + theme(plot.title = element_text(hjust = 0.5))+ theme(text=element_text(family="Calibri", face="bold", size=12))
+```
+
+#Appendix 11
+
+```{r}
+
+summary(comorb_eth_readmit_dat$Comorbidities[comorb_eth_readmit_dat$X_Readmission == 0])
+
+summary(comorb_eth_readmit_dat$Comorbidities[comorb_eth_readmit_dat$X_Readmission == 1])
+
+```
+
+
+#Comorbidities vs Readmission Logistic Regression
+```{r}
+
+comorb_eth_readmit_fit = glm(L_Readmission ~ Comorbidities, family="binomial", data=comorb_eth_readmit_dat)
+summary(comorb_eth_readmit_fit) 
+
+```
+
+#Co-morbidities vs Probability of Readmission Logistic Regression Plot
+```{r}
+ 
+
+model <- glm(L_Readmission ~ Comorbidities, data=comorb_eth_readmit_dat, family=binomial) 
+
+#define new data frame that contains predictor variable
+newdata <- data.frame(Comorbidities=seq(0, 40,len=500))
+
+#use fitted model to predict values of vs
+newdata$L_Readmission = predict(model, newdata, type="response")
+
+#plot logistic regression curve
+comorb_eth_readmit_dat$X_Readmission[as.integer(comorb_eth_readmit_dat$L_Readmission) == 1] = 0
+comorb_eth_readmit_dat$X_Readmission[as.integer(comorb_eth_readmit_dat$L_Readmission) == 2] = 1
+
+#view(comorb_eth_readmit_dat$X_Readmission )
+plot(y=comorb_eth_readmit_dat$X_Readmission , x=comorb_eth_readmit_dat$Comorbidities , xlab = "Number of Co-morbidities", ylab = "Probability of Readmission", main = "Co-morbidities vs Probability of Readmission")
+lines(y=newdata$L_Readmission, x=newdata$Comorbidities, lwd=2) 
+
+#view(comorb_eth_readmit_dat$L_Readmission)
+```
+
+#Ethnicity vs Readmission Logistic Regression Model
+
+```{r}
+com_eth_readmit_fit = glm(L_Readmission ~ Ethnicity, family='binomial',data=comorb_eth_readmit_dat_full)
+summary(com_eth_readmit_fit)
+
+```
+
+
+#Comorbidities and Ethnicity vs Readmission Logistic Regression Model
+
+```{r}
+com_eth_readmit_fit = glm(L_Readmission ~ Comorbidities + Ethnicity, family='binomial',data=comorb_eth_readmit_dat_full)
+summary(com_eth_readmit_fit)
+
+```
+
+#Data - IQR for Prevalent Comorbidity on Readmission
+```{r}
+
+prev_comorb_readmit_file = paste0(cuhdata_dir, '\\', 'ITUSpecificCOMORXReadmit.csv') 
+prev_comorb_readmit_dat_full = read.table(prev_comorb_readmit_file, sep=',', header = TRUE)
+prev_comorb_readmit_dat_full$merged_comorb_name = as.factor(prev_comorb_readmit_dat_full$merged_comorb_name)
+head(prev_comorb_readmit_dat_full)
+#summary(prev_comorb_readmit_dat_full[which(prev_comorb_readmit_dat_full$merged_comorb_name == 'Anaemia'),])
+summary(prev_comorb_readmit_dat_full)
+
+
+```
+
+#Significance of each Comorbidity on Readmission
+```{r}
+prev_comorb_readmit_dat_full$merged_comorb_name = relevel(prev_comorb_readmit_dat_full$merged_comorb_name, ref = "COPD")
+prev_comorb_readmit_fit = glm(l_readmission ~ merged_comorb_name, family='binomial',data=prev_comorb_readmit_dat_full)
+summary(prev_comorb_readmit_fit)
+
+
+```
+
+
+
+#Data for Co-morbidities vs Readmission Probability Geom-Bar
+```{r} 
+comorb_readmit_probabhs_file = paste0(cuhdata_dir, '\\', 'ITUSpecificCOMORXReadmitProbability.csv') 
+comorb_readmit_probabhs_dat_full = read.table(comorb_readmit_probabhs_file, sep=',', header = TRUE)
+#comorb_readmit_probabhs_dat_full$Comorbidities = as.factor(comorb_readmit_probabhs_dat_full$Comorbidities)
+#comorb_readmit_probabhs_dat_full$Probability_Readmission = as.factor(comorb_readmit_probabhs_dat_full$Probability_Readmission)
+head(comorb_readmit_probabhs_dat_full)
+
+```
+
+#Comorbidity on Readmission Probability Geom Bar
+```{r} 
+comorb_readmit_probabhs_dat_full %>% ggplot +geom_bar(aes(x= reorder(merged_comorb_name, Probability_Readmission), y=Probability_Readmission), fill = "purple",  stat="identity", position = "dodge")   + theme(plot.title = element_text(hjust = 0.5,))+ theme(text=element_text(family="Calibri", face="bold", size=12))+ theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + coord_flip() +
+  aes(y = after_stat(count)/sum(after_stat(count))) + 
+  scale_y_continuous(labels = scales::percent)+labs(title = "Percentage Probability of Readmission by Co-morbidity", x="Co-morbidities", y="Probability of Readmission") 
+
+```

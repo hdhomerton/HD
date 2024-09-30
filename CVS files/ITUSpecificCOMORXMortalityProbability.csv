@@ -1,0 +1,15 @@
+merged_comorb_name,Probability_Mortality
+Pulmonary embolism,0.2381
+Pneumonia,0.2667
+Sepsis,0.2131
+Atrial fibrillation,0.3922
+Diabetes,0.3704
+COPD,0.2941
+Respiratory failure,0.25
+Obesity,0.1071
+Hypertension,0.1136
+Delirium,0.1786
+Anaemia,0.2222
+Hyponatraemia,0.4
+COVID,0.2692
+Asthma,0.2941

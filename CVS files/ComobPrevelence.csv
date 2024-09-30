@@ -1,0 +1,677 @@
+merged_comorb_name,c
+"Antiplatelet or antithrombotic long-term use",1
+"Road vehicle accident as cause of injury",1
+"Pulmonary embolism",21
+"Tracheostomy status",2
+Agitation,5
+Haematuria,8
+"At risk for venous thromboembolism (VTE)",8
+Pneumonia,60
+"Ischaemic heart disease",7
+Sepsis,61
+"Atrial fibrillation",51
+Diabetes,27
+"Lung cancer",1
+"MI (myocardial infarction)",1
+"Pulmonary nodule, right",1
+Stroke,8
+COPD,17
+"DVT (deep venous thrombosis)",7
+"L1 vertebral fracture",1
+"GI bleeding",1
+"Endotracheal tube present",4
+"Skin lesion",1
+Hypernatraemia,3
+Rhabdomyolysis,3
+"Closed fracture of neck of left femur",1
+"Acute kidney injury",61
+Melanoma,1
+Hypercalcaemia,4
+Hypoglycaemia,2
+"Excessive drinking alcohol",5
+Anticoagulated,3
+"Fall at home",2
+"Fluid overload",7
+"Myocardial infarction",3
+Hypoalbuminaemia,10
+"Alcohol withdrawal",3
+"Counselling regarding end of life decision making",1
+"Low BP",1
+"Respiratory failure",52
+"Alcoholic cirrhosis of liver",3
+"Ovarian cancer",1
+"Learning difficulty",3
+"Fall during current hospitalisation",1
+"Hip fracture, right",1
+"Dilated cardiomyopathy",1
+Jaundice,4
+Obesity,28
+Diverticulosis,2
+Gallstones,1
+Cellulitis,3
+Hypertension,44
+"Neuropathic pain",1
+Hypercholesteraemia,2
+Pyrexia,2
+"Fracture of neck of right femur",2
+Delirium,28
+"Tracheostomy present",3
+"BCC (basal cell carcinoma of skin)",1
+"History of splenectomy",1
+"Discharge planning issues",2
+"LRTI (lower respiratory tract infection)",5
+Dysphagia,5
+Ascites,13
+Hypotension,8
+"Upper GI bleeding",6
+Febrile,1
+"Seizure due to alcohol withdrawal",1
+"Cirrhosis of liver",2
+"Alcohol dependence",2
+Malnutrition,2
+"Intracerebral haemorrhage",2
+"Raised intracranial pressure",1
+"Intracranial bleeding",1
+"Barrett oesophagus",3
+"History of bone density study",1
+"Renal mass",1
+"Adenocarcinoma of oesophagus",2
+"TB (tuberculosis) contact",3
+"Impaired mobility",3
+Gastroenteritis,1
+Hypokalaemia,4
+"Osteoarthritis of right hip",3
+"Ulcers of both lower legs",4
+"Diabetic ulcer of heel",3
+Colitis,4
+Smoker,8
+"Cervical spondylosis with myelopathy",3
+"Non-alcoholic fatty liver disease",1
+"Pulmonary hypertension",4
+"Metabolic acidosis",3
+"Osteoporosis with pathological fracture",1
+"CKD (chronic kidney disease) stage 3, GFR 30-59 ml/min",1
+"Thoracic vertebral fracture",1
+Anxiety,7
+"GORD (gastro oesophageal reflux disease)",10
+"Colonic polyp",1
+"Cardiac arrest",2
+"Aortic valve replaced",4
+"NSTEMI (non-ST elevated myocardial infarction)",8
+"Hx of CABG",1
+"Pulmonary oedema",4
+"Caring for the dying",4
+Macrocytosis,4
+Diverticulitis,2
+"S/P aortic valve replacement",1
+"ILD (interstitial lung disease)",2
+"Biliary stones",2
+Ex-smoker,5
+Haemorrhoids,2
+Bronchiectasis,7
+Epilepsy,4
+Anaemia,27
+"CCF (congestive cardiac failure)",7
+Falls,1
+"Cerebral infarct",2
+"Pelvic fluid collection",1
+"Weaning from respirator",8
+Transaminitis,4
+"Weakness generalised",1
+"Bronchiectasis with acute lower respiratory infection",1
+"Frequent diarrhea",1
+"S/P MVR (mitral valve replacement)",1
+"Acute kidney failure",1
+Hyponatraemia,15
+"Streptococcal bacteraemia",3
+"Inguinal hernia, left",2
+"S/P respiratory system surgery",1
+"PUO (pyrexia of unknown origin)",3
+"Primary biliary cholangitis",5
+"Oesophageal varices",6
+Eosinophilia,1
+Gallstone,3
+COVID,26
+Hypogammaglobulinaemia,1
+Asthma,17
+"Diffuse large B cell lymphoma",1
+"Hyponatremia with increased serum osmolality",1
+Vomiting,3
+"AML (acute myeloid leukaemia)",1
+Meningioma,1
+"Vitamin D deficiency",7
+"Cholecystitis, acute",1
+"Language barrier",1
+"Gall stones",1
+"Obstructive sleep apnoea",3
+"Folate deficiency",4
+Hyperglycaemia,6
+"Urinary tract infection",4
+"Cerebrovascular accident (stroke)",1
+"Peripheral oedema",5
+Confusion,6
+"Shortness of breath",3
+"Acute cholecystitis",1
+"Diabetic foot ulcer",4
+"PE (pulmonary thromboembolism)",2
+"Pneumococcal bacteraemia",1
+"Current smoker",3
+"BMI 45.0-49.9, adult",1
+Cholangiocarcinoma,1
+"Chest pain",4
+"Functional weakness",1
+"Mitral regurgitation",4
+"Tricuspid regurgitation",2
+"Acute urinary retention",1
+"Peripheral neuropathy",2
+"Basal cell carcinoma, face",1
+"Oesophageal varices with bleeding",3
+"Back pain",2
+"Pancreatic cyst",2
+"MSSA (methicillin susceptible Staphylococcus aureus) septicaemia",1
+"Benign prostatic hyperplasia",2
+"Deceased-donor kidney transplant",3
+"ESRD on haemodialysis",1
+Neutropaenia,1
+"Encounter for rehabilitation",1
+"Prolonged Q-T interval on ECG",1
+"S/P TIPS (transjugular intrahepatic portosystemic shunt)",2
+"DKA (diabetic ketoacidosis)",5
+"Cancer of left kidney",1
+"Abnormal CT scan, chest",2
+Lymphoma,1
+"History of bronchoscopy",1
+"Upper gastrointestinal haemorrhage",1
+Seizure,12
+"ESRF (end stage renal failure)",1
+"Recurrent biliary colic",1
+Cholecystitis,2
+"CKD (chronic kidney disease) stage 4, GFR 15-29 ml/min",2
+"Polymyalgia rheumatica",2
+Thrombocytopaenia,11
+"Staphylococcus aureus bacteraemia",1
+"Abdominal aortic aneurysm",2
+Thrush,1
+"Pyrexia of unknown origin",1
+Breathlessness,1
+"Palliative care",2
+"Bacteraemia due to Gram-positive bacteria",2
+"Aspiration into airway",3
+"Follicular lymphoma",2
+"Osteoarthritis of both knees",2
+"VT (ventricular tachycardia)",2
+Cholangitis,2
+"Barrett syndrome",2
+"Status post left hip replacement",2
+"Chronic pancreatitis",2
+"Intra-abdominal fluid",1
+"Anticoagulated on heparin",3
+Trauma,3
+"Adenocarcinoma of gastro-oesophageal junction",2
+Hyperkalaemia,5
+Diarrhoea,10
+"Tracheostomy tube present",1
+"Gastric paresis",1
+"Rib fracture",1
+"Thoracic spine fracture",2
+"Chest drain in situ",4
+"Alcohol abuse",6
+"Pleural effusion on right",2
+Pneumothorax,4
+Smoking,1
+"Pulmonary nodule seen on imaging study",1
+"Chronic steroid use",1
+"Frequent falls",1
+"Suprapubic catheter",2
+"UTI (urinary tract infection)",4
+"Oropharyngeal dysphagia",1
+Polypharmacy,1
+"Reduced mobility",1
+"Femur fracture, right",1
+"Alcoholic cirrhosis",5
+Oesophagitis,1
+Haematemesis,1
+"MGUS (monoclonal gammopathy of unknown significance)",1
+"Alcoholic liver disease",1
+"Oral candidiasis",2
+"Swallowing impaired",1
+Encephalopathy,2
+"Liver disorder",1
+"Alcoholic hepatitis",3
+Cirrhosis,4
+"Systemically used antifungal antibiotics causing adverse effects in therapeutic use",1
+"Liver transplanted",13
+Bleeding,1
+"Umbilical hernia",2
+Depression,11
+Menorrhagia,2
+"Chronic intractable pain",1
+"Post-operative state",1
+"Renal stones",1
+"Adrenal insufficiency",1
+"Anticoagulated on warfarin",1
+"Iron deficiency",4
+"Liver lesion",2
+Gout,6
+Osteoporosis,4
+Arthralgia,1
+"S/P PICC central line placement",1
+Glaucoma,2
+"Abnormal LFTs (liver function tests)",2
+Immunosuppression,3
+"S/P cervical discectomy",1
+"Pleural effusion, left",3
+Collapse,1
+"Amputee, below knee",1
+"Hearing loss",1
+"Status post lobectomy of lung",1
+"Gastro-oesophageal reflux",1
+"Ureteric stone",2
+Nephrolithiasis,1
+Pain,2
+"Patient in clinical research study",1
+"Sleep apnoea",1
+"LVH (left ventricular hypertrophy)",1
+Hypothyroidism,13
+"Hypovitaminosis D",1
+"Lung mass",3
+"Psychiatric problem",1
+"Clavicle fracture",2
+"Right rib fracture",1
+"Left rib fracture",3
+"Status post transjugular intrahepatic portosystemic shunt",1
+"Bleeding oesophageal varices",2
+"On enteral nutrition",1
+"Vascular dementia",1
+"Diabetic foot ulcers",1
+"Right ventricular failure",1
+"Mild aortic stenosis",2
+"Cirrhosis with alcoholism",1
+"Hepatic encephalopathy",4
+"Fall with injury",1
+"Subdural haematoma",2
+"Normal pressure hydrocephalus",1
+"Chronic subdural haematoma",1
+"Prostate cancer",2
+"Lower urinary tract symptoms (LUTS)",2
+"AAA (abdominal aortic aneurysm)",3
+"SVT (supraventricular tachycardia)",3
+"S/P CABG x 3",1
+"CKD (chronic kidney disease)",2
+"Elevated prostate specific antigen (PSA)",1
+"HH (hiatus hernia)",1
+"End-stage renal disease (ESRD)",1
+Gastritis,3
+"LVF (left ventricular failure)",2
+"Fracture of distal end of radius",1
+"Knee pain, chronic",3
+"Atrial flutter",3
+Sciatica,2
+"History of DVT (deep vein thrombosis)",1
+"Hip fracture",1
+"ANCA-positive vasculitis",1
+"Renal failure due to vascular disorder",1
+"Portal vein thrombosis",5
+"Bipolar affective disorder",2
+"Obstructive sleep apnoea on CPAP",1
+Lymphadenopathy,2
+"Pain, foot",1
+"Urinary catheter in situ",1
+Arthritis,1
+"Coronary artery disease",1
+"Aortic stenosis",3
+"Collapse of right lung",1
+Fracture,2
+"Contusion of lung",1
+"TBI (traumatic brain injury)",3
+"Pleural effusion",4
+"Care involving use of rehabilitation procedures",1
+Dehydration,1
+"Alcohol abuse w/alcohol-induced psychotic disorder w/hallucination",1
+"Spontaneous bacterial peritonitis",2
+"Lung consolidation",2
+"Alcoholic cirrhosis of liver with ascites",1
+"BiPAP (biphasic positive airway pressure) dependence",3
+"NSAID long-term use",1
+"Recurrent traumatic pneumothorax",1
+"Subdural haematoma, chronic",1
+"Peripheral vascular disease",1
+"PTSD (post-traumatic stress disorder)",2
+"Former smoker",1
+"HTN (hypertension)",3
+"H/O surgical biopsy",1
+"Abnormal prostate by palpation",1
+"Enlarged prostate with lower urinary tract symptoms (LUTS)",1
+"Gastro-oesophageal reflux disease",3
+"DM type 2 causing eye disease",1
+"Left ventricular dysfunction",2
+"Breast cancer",3
+"Influenza A",2
+"Bipolar disorder",3
+Weakness,3
+"First degree heart block",1
+"Ulcerative colitis",1
+"Vertebral fracture",1
+Hyperparathyroidism,1
+Spondyloarthritis,1
+"Urinary retention",1
+"Acute renal failure",1
+"S/P gastrectomy",1
+"S/P insertion of IVC (inferior vena caval) filter",1
+"Chronic interstitial lung disease",1
+"Lower back pain",1
+Palpitations,2
+"Chronic low back pain",2
+Bradycardia,4
+"Viral illness",2
+"Referral of patient",6
+Sinusitis,1
+"DLBCL (diffuse large B cell lymphoma)",1
+"Presence of tracheostomy",2
+Hydrocephalus,4
+"History of laryngoscopy",1
+"Hemiparesis affecting left side as late effect of cerebrovascular accident (CVA)",1
+"SIADH (syndrome of inappropriate ADH production)",2
+Fever,3
+Constipation,2
+"History of craniotomy",1
+"ANCA-associated vasculitis",3
+"Feeding difficulties",1
+"Abnormal LFTs",1
+"Troponin level elevated",1
+"Pulmonary fibrosis",1
+"OSA (obstructive sleep apnoea)",2
+"Fatty liver",2
+"Electrolyte abnormality",2
+"Status post exploratory laparotomy",1
+"Transplant recipient",1
+"History of gastroscopy",1
+Vasculitis,1
+"Cataracts, bilateral",1
+Fall,3
+"Cardiac pacemaker",1
+"Hepatitis C virus",1
+"H/O self-harm",1
+"Breathlessness on exertion",1
+Cataract,2
+Fibromyalgia,1
+"Right heart failure",1
+"Cellulitis of left leg",1
+"Elevated ALT measurement",2
+"Supraventricular tachycardia",1
+Hypercholesterolaemia,3
+"Seborrhoeic keratosis",1
+Overdose,2
+"IHD (ischaemic heart disease)",2
+"DNAR (do not attempt resuscitation)",1
+"ICH (intracerebral haemorrhage)",1
+"Acute right MCA stroke",1
+"Clavicular fracture",1
+"Pelvic fracture",1
+"Alcohol intoxication",1
+"Acetabular fracture",1
+"Hepatic steatosis",2
+Pancreatitis,1
+"BPH (benign prostatic hyperplasia)",1
+"Bilateral dry eyes",1
+"Proliferative diabetic retinopathy",1
+Dyslipidaemia,1
+"Heart failure",4
+"S/P CABG (coronary artery bypass graft)",1
+"Right leg DVT",1
+"Cellulitis of both lower extremities",1
+Proteinuria,3
+"E. coli bacteraemia",2
+"Physical deconditioning",1
+"S/P laparotomy",1
+"Diabetic macular oedema",1
+"Neuropathic diabetic ulcer of foot",1
+"Pleural effusion, right",1
+"CKD (chronic kidney disease), stage IV",1
+"Patient requiring acute dialysis",1
+"Diabetic nephropathy",1
+"Gross haematuria",1
+Melaena,1
+"Type 2 myocardial infarction",1
+Epistaxis,2
+"Self-injurious behaviour",1
+"Alcohol withdrawal seizure",1
+"Fracture of thoracic spine at T1-T2 level",1
+"Cerebral infarction",1
+"Depressive episode",2
+"Gall bladder stones",1
+"Cognitive impairment",2
+"Pseudomonas aeruginosa colonisation",2
+"Weight loss",6
+"Potassium deficiency",1
+"Clostridium difficile diarrhoea",1
+"Chronic right hip pain",1
+"SOB (shortness of breath)",1
+"Spinal fracture of T12 vertebra",1
+"H/O echocardiogram",1
+"Bright red rectal bleeding",1
+Osteomyelitis,1
+"Ovarian cyst",1
+Hyperthyroidism,1
+"Acute subdural haematoma",1
+"Intracranial pressure increased",1
+Seizures,2
+"Excessive drinking of alcohol",4
+"SDH (subdural haematoma)",2
+"Mixed Alzheimer's and vascular dementia",1
+"Aspiration into respiratory tract",1
+"Cardiac failure",3
+"Diabetic ketosis",1
+"Right femoral vein DVT",1
+"Intravenous drug abuse",1
+Hyperlipidaemia,1
+"SCC (squamous cell carcinoma)",4
+"H/O aortic valve replacement",2
+"S/P small bowel resection",2
+"Hypomagnesaemia syndrome",1
+Lymphoedema,1
+"Breast cancer, right",4
+"History of nephrectomy",1
+"Head injury",2
+"LBBB (left bundle branch block)",2
+"CAD (coronary artery disease)",1
+"Memory disorder",1
+"IVDU (intravenous drug user)",2
+"Subarachnoid haemorrhage",1
+"Hepatitis C",2
+"Ulcer of left lower leg",1
+"MDS (myelodysplastic syndrome)",1
+"S/P biliary duct dilatation of transplanted liver",1
+"ESBL (extended spectrum beta-lactamase) producing bacteria infection",1
+"SCCA (squamous cell carcinoma) of skin",1
+"Renal impairment",1
+"Encounter for nasogastric tube placement",1
+"Dysphagia, oropharyngeal phase",1
+Dementia,1
+"Brainstem infarct, acute",1
+"CVA (cerebral vascular accident)",1
+"Encounter for dying care",1
+Osteopenia,1
+Bacteraemia,1
+"Crohn's disease",4
+"Active intravenous drug use",1
+"Dental caries",1
+"Dependence on haemodialysis",1
+"On total parenteral nutrition (TPN)",2
+"Aneurysm of abdominal aorta",1
+"Creatinine elevation",1
+"Aortic stenosis, moderate",1
+"Gastric ulcer",2
+Eczema,1
+"Monoclonal gammopathy of unknown significance (MGUS)",1
+"Aortic valve regurgitation",1
+"Moderate to severe pulmonary hypertension",1
+"Chronic obstructive pulmonary disease",2
+Migraines,1
+"Squamous cell oesophageal cancer",1
+"Bilateral pneumothorax",1
+"Dry eyes, bilateral",1
+"Bilateral pseudophakia",1
+"PEG (percutaneous endoscopic gastrostomy) status",1
+"Tracheostomy dependent",2
+"Small bowel obstruction",1
+"Epigastric pain",1
+"Small bowel obstruction due to adhesions",1
+"Hydronephrosis, right",1
+"Rectal cancer",3
+"Potassium serum increased",1
+"LFTs abnormal",1
+"Mediastinal haematoma",1
+"Chronic use of steroids",1
+"Thrombocytopenia, unspecified",1
+"Multiple rib fractures",3
+"Gram-positive bacteraemia",1
+"Immunosuppressed status",1
+"STEMI (ST elevation myocardial infarction)",2
+"CKD (chronic kidney disease), stage V",2
+Pacemaker,2
+Osteoarthritis,2
+"Acute coronary syndrome",1
+"Renal cell carcinoma",1
+"Renal cell cancer",2
+"Portal hypertension with oesophageal varices",1
+"History of transjugular intrahepatic portosystemic shunt",1
+"Liver cirrhosis secondary to NASH",1
+"NAFLD (nonalcoholic fatty liver disease)",1
+"Multiple fractures of ribs of both sides",1
+"Left tibial fracture",1
+"Breast fibroadenoma",2
+Pancytopenia,3
+"Abnormal cervical cytology",2
+"Living-donor kidney transplant recipient",2
+"Portal hypertension",1
+Glioblastoma,2
+"Bleeding, intracranial",1
+"At high risk for venous thromboembolism (VTE)",1
+Confused,1
+"ECG abnormal",2
+"PVD (peripheral vascular disease)",1
+"Aortic stenosis, severe",1
+"Varices, oesophageal",3
+"Blood glucose elevated",1
+"Pre-transplant evaluation for chronic liver disease",1
+"Hx of transjugular intrahepatic portosystemic shunt",1
+"Electrolyte disturbance",1
+"History of bone marrow biopsy",1
+"Chronic kidney disease (CKD)",1
+"Renal cyst",1
+"Haematological disease",1
+"Acute liver disease",1
+"Metastatic renal cell carcinoma",2
+"Myasthenia gravis",3
+"Ventilatory failure",1
+"H/O unilateral nephrectomy",1
+"Poor mobility",1
+"Peripheral arterial disease",1
+"Diverticular disease",1
+"Wedge compression fracture of T6 vertebra",1
+"Colon cancer",1
+"Anxiety and depression",1
+"OSA on CPAP",1
+Hypothyroid,2
+Infection,1
+"Encounter for colonoscopy due to history of adenomatous colonic polyps",1
+"Dying care",1
+"Hepatic lesion",1
+"TIA (transient ischaemic attack)",1
+"Liver abscess",1
+"Collapse of left lung",1
+"Chronic hepatitis C with cirrhosis",1
+"Aneurysmal subarachnoid haemorrhage",1
+"BPPV (benign paroxysmal positional vertigo)",1
+"Alcohol intake above recommended sensible limits",1
+"ETOH abuse",1
+"Methadone maintenance therapy patient",1
+Psoriasis,1
+"HIV-1 infection",1
+"Long term current use of systemic steroids",1
+"Screening for cervical cancer",1
+"Right acetabular fracture",1
+"OA (osteoarthritis) of knee",1
+Frailty,1
+"Fracture of multiple ribs of right side",1
+"Breast cancer, left",1
+"Cerebral dysfunction",1
+"Liver disease",1
+"Hepatocellular carcinoma",1
+"Hx of exploratory laparotomy",1
+Dizziness,1
+"CLL (chronic lymphocytic leukaemia)",1
+"SAH (subarachnoid haemorrhage)",1
+"Coagulation disorder",1
+"Distal radius fracture, right",1
+"Fracture of thoracic spine",1
+"Multiple fractures of ribs of right side",1
+"H/O craniotomy",1
+"Right pulmonary contusion",1
+"Right clavicle fracture",1
+"Fracture, thoracic vertebra",1
+"Multiple myeloma",1
+Agitated,1
+Haematoma,1
+"E coli bacteraemia",1
+"Bilateral leg oedema",1
+"Confusion with nonfocal neurological examination",1
+"Dependence on continuous positive airway pressure ventilation",1
+"Alzheimer disease",1
+Hayfever,1
+"Embolic stroke involving middle cerebral artery",1
+"Right femoral shaft fracture",1
+"Left-sided weakness",1
+"Hx of prostatectomy",1
+"Spine fracture",1
+Syncope,1
+"BCC (basal cell carcinoma)",1
+"Skin lesions",1
+"Unstable angina",1
+"Head trauma",1
+"Ocular hypertension of right eye",1
+"RSV infection",1
+"Encounter for monitoring of systemic steroid therapy",1
+"Post traumatic stress disorder (PTSD)",1
+"Status post tracheostomy",1
+"History of cholecystectomy",1
+"Palliative care encounter",1
+"Coronary heart disease",1
+"Nausea & vomiting",1
+Coagulopathy,1
+"Reperfusion injury of kidney",1
+"Humerus fracture",1
+"Suicide ideation",1
+"Mental and behavioural disorders due to use of alcohol: dependence syndrome",1
+"Abnormal liver function tests",1
+"Pericardial effusion",4
+"Transfer dysphagia",1
+"Collapse of both lungs",1
+"Low phosphate levels",1
+"POAG (primary open-angle glaucoma)",1
+"Diabetic keto-acidosis",1
+"Psoas haematoma, left, secondary to anticoagulant therapy",1
+"Mild aortic stenosis by prior echocardiogram",1
+"Knee osteoarthritis",1
+"Pleural plaque",1
+Myeloma,2
+"Status post total knee replacement",1
+"Haemophilus influenzae septicaemia",1
+"Diabetic foot infection",1
+"Keratoacanthoma type squamous cell carcinoma of skin",3
+"Squamous cell carcinoma of oesophagus",3
+Splenomegaly,1
+"Feeding by G-tube",1
+"Papillary thyroid carcinoma",1
+"ALD (alcoholic liver disease)",1
+"Liver cirrhosis",1
+"Intermittent claudication",1
+"Thickened endometrium",1
+"Spinal fracture",1
+"SCC (squamous cell carcinoma), scalp/neck",1
+"Cancer of sigmoid colon",1
+"Rash and nonspecific skin eruption",1
+"Elevated troponin",1
+Headache,1
+"Vitamin B12 deficiency",1
